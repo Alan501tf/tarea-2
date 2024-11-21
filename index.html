@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TZ - Tienda de Ropa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabecera -->
+  <header class="header">
+    <div class="logo">
+      <h1>TZ</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#juego">Juego</a></li>
+        <li><a href="#login">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <p>Carrito: <span id="cart-count">0</span> productos</p>
+    </div>
+  </header>
+
+  <!-- Inicio -->
+  <section id="inicio" class="banner">
+    <h2>Bienvenido a TZ</h2>
+    <p>Tu tienda de ropa favorita, donde estilo y comodidad se unen.</p>
+  </section>
+
+  <!-- Galería de Productos -->
+  <section id="productos" class="products">
+    <h2>Nuestros Productos</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="img/polera.jpg" alt="Polera Básica">
+        <h3>Camiseta Básica</h3>
+        <p>$10.00</p>
+        <button onclick="addToCart()">Agregar al Carrito</button>
+      </div>
+      <div class="product-card">
+        <img src="img/p1.jpg" alt="Jean azul">
+        <h3>Pantalón Casual</h3>
+        <p>$25.00</p>
+        <button onclick="addToCart()">Agregar al Carrito</button>
+      </div>
+      <div class="product-card">
+        <img src="img/b1.jpg" alt="Blusa">
+        <h3>Sudadera con Capucha</h3>
+        <p>$30.00</p>
+        <button onclick="addToCart()">Agregar al Carrito</button>
+      </div>
+      <div class="product-card">
+        <img src="img/chompa.jpg" alt="Chompa ">
+        <h3>Vestido Floral</h3>
+        <p>$40.00</p>
+        <button onclick="addToCart()">Agregar al Carrito</button>
+      </div>
+      <div class="product-card">
+        <img src="img/Chaqueta-en-Jean.jpg" alt="Chaqueta de Jean">
+        <h3>Chaqueta de Jean</h3>
+        <p>$50.00</p>
+        <button onclick="addToCart()">Agregar al Carrito</button>
+      </div>
+      <div class="product-card">
+        <img src="img/poleron-canguro.jpg" alt="Poleron">
+        <h3>Zapatos Deportivos</h3>
+        <p>$60.00</p>
+        <button onclick="addToCart()">Agregar al Carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-us">
+    <div class="about-content">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        En **TZ**, nos dedicamos a ofrecerte ropa moderna y asequible, diseñada para destacar tu estilo y comodidad. 
+        Creemos en la calidad, sostenibilidad y en ponerte a ti como prioridad. ¡Explora y hazlo tuyo!
+      </p>
+    </div>
+  </section>
+  
+  
+  <!-- Juego: Tres en Raya -->
+  <section id="juego" class="game">
+    <h2>¡Diviértete con nuestro 3 en Raya!</h2>
+    <div id="tres-en-raya">
+      <div class="cell" onclick="makeMove(0)"></div>
+      <div class="cell" onclick="makeMove(1)"></div>
+      <div class="cell" onclick="makeMove(2)"></div>
+      <div class="cell" onclick="makeMove(3)"></div>
+      <div class="cell" onclick="makeMove(4)"></div>
+      <div class="cell" onclick="makeMove(5)"></div>
+      <div class="cell" onclick="makeMove(6)"></div>
+      <div class="cell" onclick="makeMove(7)"></div>
+      <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+    <p id="game-status">¡Tu turno!</p>
+    <button onclick="resetGame()">Reiniciar Juego</button>
+  </section>
+  
+  <!-- Pie de Página -->
+  <footer class="footer">
+    <p>&copy; 2024 TZ. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
